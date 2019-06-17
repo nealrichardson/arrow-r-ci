@@ -1,6 +1,17 @@
 language: r
 cache: packages
+pandoc: false
+disable_homebrew: true
 
 before_install:
   - git clone --depth=1 https://github.com/apache/arrow.git
   - cd arrow/r
+
+matrix:
+  include:
+  - os: linux
+    r: release
+  - os: linux
+    r: devel
+  - os: osx
+    r: devel
