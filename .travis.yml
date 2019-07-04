@@ -4,7 +4,7 @@ pandoc: false
 disable_homebrew: true
 
 before_install:
-  - git clone --depth=1 https://github.com/apache/arrow.git
+  - git clone --depth=1 -b apache-arrow-0.14.0 https://github.com/apache/arrow.git
   - cd arrow/r
 
 matrix:
