@@ -23,20 +23,20 @@ on_failure:
   - travis-tool.sh dump_logs
 
 artifacts:
-  - path: '*.Rcheck\**\*.log'
+  - path: 'arrow\r\*.Rcheck\**\*.log'
     name: Logs
 
-  - path: '*.Rcheck\**\*.out'
+  - path: 'arrow\r\*.Rcheck\**\*.out'
     name: Logs
 
-  - path: '*.Rcheck\**\*.fail'
+  - path: 'arrow\r\*.Rcheck\**\*.fail'
     name: Logs
 
-  - path: '*.Rcheck\**\*.Rout'
+  - path: 'arrow\r\*.Rcheck\**\*.Rout'
     name: Logs
 
-  - path: '\*_*.tar.gz'
+  - path: 'arrow\r\*_*.tar.gz'
     name: Bits
 
-  - path: '\*_*.zip'
+  - path: 'arrow\r\*_*.zip'
     name: Bits
