@@ -1,4 +1,8 @@
 # Copied from https://github.com/krlmlr/r-appveyor/blob/master/sample.appveyor.yml
+
+environment:
+  TEST_R_WITH_ARROW: TRUE
+
 init:
   ps: |
         $ErrorActionPreference = "Stop"
