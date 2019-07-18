@@ -15,6 +15,6 @@ matrix:
     r: devel
   - os: osx
     osx_image: xcode10.2
-    r: devel
+    r: release
     # Add this env var so we can assert in the tests that the library is installed correctly
     env: TEST_R_WITH_ARROW=TRUE
