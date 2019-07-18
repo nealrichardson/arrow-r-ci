@@ -14,7 +14,10 @@ matrix:
   - os: linux
     r: devel
   - os: osx
+    # CRAN is stuck on 10.11, xcode 8.2
     osx_image: xcode8
+    # The MacTeX the job tries to install requires 10.12 or greater
+    latex: false
     r: release
     # Add this env var so we can assert in the tests that the library is installed correctly
     env: TEST_R_WITH_ARROW=TRUE
